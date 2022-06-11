@@ -16,11 +16,11 @@ Os dados contém cerca de 1.1017.209 registros de venda.
 
 O CFO da empresa solicitou aos gerentes de cada loja a previsão de vendas (faturamento) das próximas 6 semanas. O objetivo disso é fazer um planejamento de quanto cada loja pode contribuir para uma reforma e padronização da rede.
 
-Para mais acertividade na previsão, os gerentes me contataram, um cientista de dados. para fazer essa previsão usando dados da empresa e algoritimos de machine learning.
+Para mais assertividade na previsão, os gerentes me contataram, um cientista de dados. para fazer essa previsão usando dados da empresa e algorítimos de machine learning.
 
 ### 1.2 Objetivo
 
-As quatro preocupações básicas do cientista de dados são disputa de dados, engenharia de recursos, modelagem e relatórios de resultados. O Objetivo desse projeto está em treinar um algoritimo de machine learning baseado nos dados disponibilizados, afim de prever o futuro com a menor taxa de erro possível. 
+As quatro preocupações básicas do cientista de dados são disputa de dados, engenharia de recursos, modelagem e relatórios de resultados. O Objetivo desse projeto está em treinar um algorítimo de machine learning baseado nos dados disponibilizados, afim de prever o futuro com a menor taxa de erro possível. 
 
 Dessa forma, a empresa poderá melhorar sua gestão financeira e aumentar o seu faturamento com estratégias feitas a partir do conhecimento do comportamento de seus dados.
 
@@ -97,11 +97,11 @@ Antes de tudo, fui entender o problema do negócio. Ler sobre e decidir se a pre
 
 #### 3.3.2. Descrição dos dados
 
-Esta etapa, consiste em estudar os dados disponiblizados e fazer as devidas limpezas prévias:
+Esta etapa, consiste em estudar os dados disponibilizados e fazer as devidas limpezas prévias:
 
  - Estudar as dimensões dos dados
- - Converter tipos, principalemnte datas e números.
- - Checar a quantidade de variáveis categoricas e númericas temos.
+ - Converter tipos, principalmente datas e números.
+ - Checar a quantidade de variáveis categóricas e numéricas temos.
  - Checar e tratar NA's
 
 #### 3.3.3.Filtragem de variáveis
@@ -110,7 +110,7 @@ Filtrar as variáveis, afim de deixar apenas aquelas que fazem sentido trabalhar
 
 #### 3.3.4. Feature Engineering
 
-Criação junto ao time de negócio, hipóteses para válidar e gerar insights de negócio. Além de criar variáveis que imapctam no fenômeno das vendas.
+Criação junto ao time de negócio, hipóteses para validar e gerar insights de negócio. Além de criar variáveis que imapctam no fenômeno das vendas.
 
 #### 3.3.5. Analise exploratória de Dados
 
@@ -126,15 +126,15 @@ Uma das mais importantes etapas. Fizemos a separação dos dados em treino e tes
 
 #### 3.3.8. Modelos de Machine Learning
 
-Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation. Segue os resultados abaixo
+Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a técnica de cross validation. Segue os resultados abaixo
 
 <img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/error-print.png">
 
 #### 3.3.9 Hiperparameter fine tunning
 
-Essa etapa consiste em encontrar melhores parametros para o modelo, afim de melhorar seu erro. 
+Essa etapa consiste em encontrar melhores parâmetros para o modelo, afim de melhorar seu erro. 
 
-Utilizei o método de Random Search, que define seus valores aleatoriamente. Após alguns dias usando esse método para todos os modelos, o que encontrei um RMSE menor foi o XGBoost, conforfme imagem abaixo:
+Utilizei o método de Random Search, que define seus valores aleatoriamente. Após alguns dias usando esse método para todos os modelos, o que encontrei um RMSE menor foi o XGBoost, conforme imagem abaixo:
 
 <img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/xgboost.png">
 
@@ -148,13 +148,13 @@ Após a análise de performance der positiva, eu fiz o deploy do modelo no herok
 
 Na etapa de análise exploratória de dados, gerei alguns insights para apresentar ao time de negócio.
 
-Insights são informações que adquirimos através da análise exploratória dos dados. Que podem ser classificados como apenas uma curiosidade ou que contrapõe cren
+Insights são informações que adquirimos através da análise exploratória dos dados. Que podem ser classificados como apenas uma curiosidade ou que contrapõe crenças.
 
 #### 4.1. Lojas com competidores mais próximos vendem mais"
 
 <img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/1.png">
 
-O time de negócios acreditava que vendiam menos, por gerar uma concorrencia muito próxima. Mas através da análise consideramos essa hipotése falsas e vimos que a concentração de maiores vendas por loja está onde se tem mais lojas próximas.
+O time de negócios acreditava que vendiam menos, por gerar uma concorrência muito próxima. Mas através da análise consideramos essa hipótese falsas e vimos que a concentração de maiores vendas por loja está onde se tem mais lojas próximas.
 
 
 #### 4.2. Lojas com promoções ativas a mais tempo vendem menos.
@@ -185,7 +185,7 @@ O objetivo do projeto era o de prever o faturamento em vendas das próximas 6 se
 
 Melhorias a serem feitas em um próximo ciclo
 
- - Escolher melhores parametros para o XGBoost e comparar com a Random Forest, usando a estratégia Bayesian Search, ao invés da Random Search.
+ - Escolher melhores parâmetros para o XGBoost e comparar com a Random Forest, usando a estratégia Bayesian Search, ao invés da Random Search.
  - Variar as mensagens que o bot do telegram manda, não sendo limitado a falar apenas as previsões do store id e store id is wrong.
  - Adicionar ao bot o melhor cenário de previsão e o pior cenário de previsão. Baseado no cálculo dos erros.
  - Caso tenha alguma melhoria para me sugerir, pode me contactar através do meu [LinkeldIn](https://www.linkedin.com/in/gabriel-barbosa-80a50a18a/)
