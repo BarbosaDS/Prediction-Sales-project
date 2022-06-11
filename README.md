@@ -128,5 +128,7 @@ Uma das mais importantes etapas. Fizemos a separação dos dados em treino e tes
 
 Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation.
 
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/error-print.png">
+
 Apesar do RMSE do XGBoost estar maior, após a etapa do fine tunning consegui deixar seu erro bem abaixo dos demais exceto o Random Forest. Entretanto, iremos usar o XGBoost nesse treinamento, pois o mesmo demora muito menos para ser processado e a diferença não é tanta.
 
