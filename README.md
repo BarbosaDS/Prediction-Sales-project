@@ -179,7 +179,9 @@ Acesse o bot do telegram por [aqui](https://t.me/rossmannbds_bot) .
 
 ## 6. Conclusão
 
-O objetivo do projeto era o de prever o faturamento em vendas das próximas 6 semanas das lojas da Rossmann. Consegui entregar essa previsão como um modelo de machine learning que pode ser acessado intuitivamente por qualquer um através do telegram. O produto entregue satisfez a demanda do CFO que utilizou o modelo para, também, melhorar a gestão financeira da Rossmann.
+O objetivo do projeto era o de prever o faturamento em vendas das próximas 6 semanas das lojas da Rossmann. Consegui entregar essa previsão como um modelo de machine learning que pode ser acessado intuitivamente por qualquer um através do telegram. 
+
+O produto entregue satisfez a demanda do CFO que utilizou o modelo para, também, melhorar a gestão financeira da Rossmann.
 
 ## 7. Próximos passos
 
