@@ -126,9 +126,15 @@ Uma das mais importantes etapas. Fizemos a separação dos dados em treino e tes
 
 #### 8. Modelos de Machine Learning
 
-Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation.
+Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation. Segue os resultados abaixo
 
 <img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/error-print.png">
 
-Apesar do RMSE do XGBoost estar maior, após a etapa do fine tunning consegui deixar seu erro bem abaixo dos demais exceto o Random Forest. Entretanto, iremos usar o XGBoost nesse treinamento, pois o mesmo demora muito menos para ser processado e a diferença não é tanta.
+#### 9.0 HIPERPARAMETER FINE TUNNING
+
+Essa etapa consiste em encontrar melhores parametros para o modelo, afim de melhorar seu erro. 
+
+Utilizei o método de Random Search, que define seus valores aleatoriamente. Após alguns dias usando esse método para todos os modelos. O que encontrei um RMSE menor foi o XGBoost, conforfme imagem abaixo:
+
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/xgboost.png">
 
