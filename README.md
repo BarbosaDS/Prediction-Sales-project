@@ -49,6 +49,8 @@ Variável | Definição
 
 As variáveis criadas durante do desenvolvimento do projeto são: 
 
+Variável | Definição
+------------ | -------------
 |year | Ano da data que ocorreu a venda.|
 |month	 | Mês da data que ocorreu a venda.|
 |day | Dia da data que ocorreu a venda.|
