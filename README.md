@@ -176,3 +176,20 @@ Acesse o bot do telegram por aqui.
 
 
 <img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/telegram-photo.jpeg" width=40% height=40%/>
+
+## 6. Conclusão
+
+O objetivo do projeto era o de prever o faturamento em vendas das próximas 6 semanas das lojas da Rossmann. Consegui entregar essa previsão como um modelo de machine learning que pode ser acessado intuitivamente por qualquer um através do telegram. O produto entregue satisfez a demanda do CFO que utilizou o modelo para, também, melhorar a gestão financeira da Rossmann.
+
+## 7. Próximos passos
+
+Melhorias a serem feitas em um próximo ciclo
+
+ - Escolher melhores parametros para o XGBoost e comparar com a Random Forest, usando a estratégia Bayesian Search, ao invés da Random Search.
+ - Variar as mensagens que o bot do telegram manda, não sendo limitado a falar apenas as previsões do store id e store id is wrong.
+ - Adicionar ao bot o melhor cenário de previsão e o pior cenário de previsão. Baseado no cálculo dos erros.
+ - Caso tenha alguma melhoria para me sugerir, pode me contactar através do meu [LinkeldIn](https://www.linkedin.com/in/gabriel-barbosa-80a50a18a/)
+
+Made By Gabriel Barbosa
+[Portfólio](https://barbosads.github.io/portfolio_projetos/)
+[LinkeldIn](https://www.linkedin.com/in/gabriel-barbosa-80a50a18a/)
