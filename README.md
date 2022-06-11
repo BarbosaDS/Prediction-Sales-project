@@ -1,7 +1,9 @@
 # Sales Prediction Rossmann Project
 
 <img src="https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/rossmann.jpg" width=80% height=80%/>
-Projeto de previsão de vendas da rede farmacêutica Rossmann
+
+
+Projeto de previsão de vendas da rede farmacêutica Rossmann.
 
 
 A Rossmann é uma das maiores cadeias de drogarias da Europa. Eles disponibilizaram dados de venda de sua rede para o site Kaggle, para uma competição de ciência de dados. 
