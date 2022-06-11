@@ -19,7 +19,7 @@ As quatro preocupações básicas do cientista de dados são disputa de dados, e
 
 Dessa forma, a empresa poderá melhorar sua gestão financeira e aumentar o seu faturamento com estratégias feitas a partir do conhecimento do comportamento de seus dados.
 
-## Dados utilizados:
+## 2. Dados utilizados:
 
 * O Dataset foi obtido no [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales)
 * Importante se situar sobre as varíaveis originais do dataset.
@@ -34,7 +34,7 @@ Variável | Definição
 |sales | faturamento da loja naquele dia.|
 |customers | número de clientes na loja naquele dia.|
 |open | loja aberta ou fechada: (0 = closed, 1 = open).|
-|state_holiday	 | Lferiado nacional (a = public holiday, b = Easter holiday, c = Christmas, 0 = Dia Comum).|
+|state_holiday	 | feriado nacional (a = public holiday, b = Easter holiday, c = Christmas, 0 = Dia Comum).|
 |school_holiday | indica se a loja naquele dia foi afetada pelo fechamento das escolas públicas.|
 |store_type | indica qual dos 4 modelos distintos é esta loja: (a, b, c, d).|
 |assortment | indica o nível de sortimento da loja: (a = basic, b = extra, c = extended).|
@@ -46,6 +46,20 @@ Variável | Definição
 |promo2_since_week | indica a semana do calendário onde a loja entrou em Promo2.|
 |promo2_since_year | indica o ano onde a loja entrou em Promo2.|
 |promo_interval | indica os meses de início anual onde Promo2 é iniciada (ex: "Feb,May,Aug,Nov").|
+
+As variáveis criadas durante do desenvolvimento do projeto são: 
+
+|year | Ano da data que ocorreu a venda.|
+|month	 | Mês da data que ocorreu a venda.|
+|day | Dia da data que ocorreu a venda.|
+|week_of_year | Semana do ano que ocorreu a venda, considerando a primeira semana do ano como 1.|
+|year_week' | Semana do ano que ocorreu a venda, considerando a primeira semana começando do 0.(object type, %Y-%W)|
+|competition_since | Concatenação da competition_open_since_year e competition_open_since_month,indica a data exata em mês e ano que existem competidores.|
+|promo2_since | data desde que a Promo2 está ativa.|
+|promo2_time_week | números de semanas em que a Promo2 ficou ativa.|
+
+## 3. Planejamento da Solução:
+
 
 
 
