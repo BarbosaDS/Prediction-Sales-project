@@ -91,11 +91,11 @@ Quais ferramentas serão usadas no processo?
 
 Como cientista de dados, acredito na metodologia CRISP-DS para a resolução de projetos e rápida entrega de valores. Meu projeto seguiu as seguintes etapas baseadas nesta metodologia:
 
-#### 1. Entendimento do negócio.
+#### 3.3.1. Entendimento do negócio.
 
 Antes de tudo, fui entender o problema do negócio. Ler sobre e decidir se a previsão de vendas realmente era a melhor forma de resolução. Decidi que era e resolvi seguir para a próxima etapa
 
-#### 2. Descrição dos dados
+#### 3.3.2. Descrição dos dados
 
 Esta etapa, consiste em estudar os dados disponiblizados e fazer as devidas limpezas prévias:
 
@@ -104,37 +104,63 @@ Esta etapa, consiste em estudar os dados disponiblizados e fazer as devidas limp
  - Checar a quantidade de variáveis categoricas e númericas temos.
  - Checar e tratar NA's
 
-#### 3.Filtragem de variáveis
+#### 3.3.3.Filtragem de variáveis
 
 Filtrar as variáveis, afim de deixar apenas aquelas que fazem sentido trabalhar par ao nosso objetivo.
 
-#### 4. Feature Engineering
+#### 3.3.4. Feature Engineering
 
 Criação junto ao time de negócio, hipóteses para válidar e gerar insights de negócio. Além de criar variáveis que imapctam no fenômeno das vendas.
 
-#### 5. Analise exploratória de Dados
+#### 3.3.5. Analise exploratória de Dados
 
 Através das variáveis criadas junto das hipóteses. Realizar a análise bivariada e multivariada afim de validar as premissas e começar a entender quais variáveis tem mais relação com a variável resposta: Sales(vendas)
 
-#### 6. Preparação dos dados
+#### 3.3.6. Preparação dos dados
 
 Nessa etapa fizemos a  reescala dos dados (MinMaxScaler e RobustScaler), e a transformação de dados categóricos através de encoding.
 
-#### 7. SELEÇÃO DE VARIAVEIS
+#### 3.3.7. Seleção de variáveis
 
 Uma das mais importantes etapas. Fizemos a separação dos dados em treino e teste e selecionamos o Boruta como ferramenta de seleção de atributos relevantes para o modelo.
 
-#### 8. Modelos de Machine Learning
+#### 3.3.8. Modelos de Machine Learning
 
 Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation. Segue os resultados abaixo
 
-<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/error-print.png">
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/error-print.png">
 
-#### 9.0 HIPERPARAMETER FINE TUNNING
+#### 3.3.9 Hiperparameter fine tunning
 
 Essa etapa consiste em encontrar melhores parametros para o modelo, afim de melhorar seu erro. 
 
-Utilizei o método de Random Search, que define seus valores aleatoriamente. Após alguns dias usando esse método para todos os modelos. O que encontrei um RMSE menor foi o XGBoost, conforfme imagem abaixo:
+Utilizei o método de Random Search, que define seus valores aleatoriamente. Após alguns dias usando esse método para todos os modelos, o que encontrei um RMSE menor foi o XGBoost, conforfme imagem abaixo:
 
-<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/xgboost.png">
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/xgboost.png">
 
+#### 3.3.10. Avaliação do Modelo e deploy.
+
+Na ultima etapa do projeto, verifico se o resultado do modelo já entrega um valor significativo para o time de negócio, ou preciso passar por outro ciclo de melhorias.
+
+Após a análise de performance der positiva, eu fiz o deploy do modelo no heroku e criei um robô no Telegram que acesse a previsão em tempo real, de qualquer lugar.
+
+## 4. Top 3 Insights dos dados
+
+Na etapa de análise exploratória de dados, gerei alguns insights para apresentar ao time de negócio.
+
+Insights são informações que adquirimos através da análise exploratória dos dados. Que podem ser classificados como apenas uma curiosidade ou que contrapõe cren
+
+#### 1. Lojas com competidores mais próximos vendem mais
+
+
+O time de negócios acreditava que vendiam menos, por gerar uma concorrencia muito próxima. Mas através da análise consideramos essa hipotése falsas e vimos que a concentração de maiores vendas por loja está onde se tem mais lojas próximas.
+
+
+#### 2. Lojas com promoções ativas a mais tempo vendem menos.
+
+Com essa afirmativa, vemos que o comportamento dos clientes faz não valer a pena manter promoções por muito tempo. A Loja teria um lucro maior se encerrasse a promoção depois de um determinado tempo e retomasse ao preço normal.
+
+
+#### 3. Lojas vendem menos no segundo semestre do ano.
+
+Com esse insights, o time pode considerar esse declínio de faturamento sazonal para compensar com ações de marketing.
