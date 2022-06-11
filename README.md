@@ -104,4 +104,29 @@ Esta etapa, consiste em estudar os dados disponiblizados e fazer as devidas limp
  - Checar a quantidade de variáveis categoricas e númericas temos.
  - Checar e tratar NA's
 
-####
+#### 3.Filtragem de variáveis
+
+Filtrar as variáveis, afim de deixar apenas aquelas que fazem sentido trabalhar par ao nosso objetivo.
+
+#### 4. Feature Engineering
+
+Criação junto ao time de negócio, hipóteses para válidar e gerar insights de negócio. Além de criar variáveis que imapctam no fenômeno das vendas.
+
+#### 5. Analise exploratória de Dados
+
+Através das variáveis criadas junto das hipóteses. Realizar a análise bivariada e multivariada afim de validar as premissas e começar a entender quais variáveis tem mais relação com a variável resposta: Sales(vendas)
+
+#### 6. Preparação dos dados
+
+Nessa etapa fizemos a  reescala dos dados (MinMaxScaler e RobustScaler), e a transformação de dados categóricos através de encoding.
+
+#### 7. SELEÇÃO DE VARIAVEIS
+
+Uma das mais importantes etapas. Fizemos a separação dos dados em treino e teste e selecionamos o Boruta como ferramenta de seleção de atributos relevantes para o modelo.
+
+#### 8. Modelos de Machine Learning
+
+Aqui, treinamos 5 modelos : Average Model; Linear Regression Model; Lasso; Random Forest; XGBoost. E calculamos seu erro MAE, MAPE e RMSE com a tecnica de cross validation.
+
+Apesar do RMSE do XGBoost estar maior, após a etapa do fine tunning consegui deixar seu erro bem abaixo dos demais exceto o Random Forest. Entretanto, iremos usar o XGBoost nesse treinamento, pois o mesmo demora muito menos para ser processado e a diferença não é tanta.
+
