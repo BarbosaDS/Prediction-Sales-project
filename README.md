@@ -173,4 +173,6 @@ Com esse insight, o time pode considerar esse declínio de faturamento sazonal p
 ## 5. Telegram Bot
 
 Acesse o bot do telegram por aqui.
-<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/telegram-photo.jpeg">
+
+
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/telegram-photo.jpeg"width=70% height=70%/>
