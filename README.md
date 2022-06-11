@@ -60,22 +60,43 @@ Variável | Definição
 |promo2_since | data desde que a Promo2 está ativa.|
 |promo2_time_week | números de semanas em que a Promo2 ficou ativa.|
 
-## 3. Planejamento da Solução:
+## 3. Planejamento da Solução
 
-
-
-
-
-
-
-
-
-
-
-
-
+### 3.1 Produto final
 
 Esse projeto tem como objetivo entregar:
  
  - Um bot no telegram. O qual retorna o faturamento em reais das próximas 6 semanas ao botar o código da loja.
  - Entregar os melhores insights baseado na análise do comportamento dos dados.
+
+### 3.2 Ferramentas
+
+Quais ferramentas serão usadas no processo?
+
+ - Python 3.10.5;
+ - Jupyter Notebook;
+ - Git e Github
+ - Heroku Cloud
+ - Algoritmos de Classificação e Regressão
+ - Pacotes de Machine Learning Sklearn e Scipy;
+ - Técnicas de Seleção de Atributos e Redução de Dimensionalidade
+ - Flask e Python API's
+
+### 3.3 Estratégia da Solução
+
+Como cientista de dados, acredito na metodologia CRISP-DS para a resolução de projetos e rápida entrega de valores. Meu projeto seguiu as seguintes etapas baseadas nesta metodologia:
+
+#### 1. Entendimento do negócio.
+
+Antes de tudo, fui entender o problema do negócio. Ler sobre e decidir se a previsão de vendas realmente era a melhor forma de resolução. Decidi que era e resolvi seguir para a próxima etapa
+
+#### 2. Descrição dos dados
+
+Esta etapa, consiste em estudar os dados disponiblizados e fazer as devidas limpezas prévias:
+
+ - Estudar as dimensões dos dados
+ - Converter tipos, principalemnte datas e números.
+ - Checar a quantidade de variáveis categoricas e númericas temos.
+ - Checar e tratar NA's
+
+####
