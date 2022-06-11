@@ -150,17 +150,22 @@ Na etapa de análise exploratória de dados, gerei alguns insights para apresent
 
 Insights são informações que adquirimos através da análise exploratória dos dados. Que podem ser classificados como apenas uma curiosidade ou que contrapõe cren
 
-#### 1. Lojas com competidores mais próximos vendem mais
+#### 1. Lojas com competidores mais próximos vendem mais"
 
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/1.png">
 
 O time de negócios acreditava que vendiam menos, por gerar uma concorrencia muito próxima. Mas através da análise consideramos essa hipotése falsas e vimos que a concentração de maiores vendas por loja está onde se tem mais lojas próximas.
 
 
 #### 2. Lojas com promoções ativas a mais tempo vendem menos.
 
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/2.png">
+
 Com essa afirmativa, vemos que o comportamento dos clientes faz não valer a pena manter promoções por muito tempo. A Loja teria um lucro maior se encerrasse a promoção depois de um determinado tempo e retomasse ao preço normal.
 
 
 #### 3. Lojas vendem menos no segundo semestre do ano.
 
-Com esse insights, o time pode considerar esse declínio de faturamento sazonal para compensar com ações de marketing.
+<img src= "https://github.com/BarbosaDS/Prediction-Sales-project/blob/main/IMAGES/3.png">
+
+Com esse insight, o time pode considerar esse declínio de faturamento sazonal para compensar com ações de marketing.
